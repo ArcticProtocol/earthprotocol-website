@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=The+Nautigal:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    height: 100%;
+}
+
+html {
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+}
