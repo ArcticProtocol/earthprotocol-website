@@ -10,21 +10,28 @@ import {
   Star,
 } from "../../Components/Icons/Icons";
 import { useRouter } from "next/router";
+import {
+  Caption,
+  Header,
+  JubotronMission,
+  ListHeader,
+} from "./components/content";
+import NetZeroChart from "../../Components/Chart/NetZeroChart";
 
 export default function Home() {
   const router = useRouter();
   return (
     <>
       <motion.div
-        className="opacity-0"
+        className="opacity-0 relative"
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
       >
+        {/* Primary Landing Page*/}
         <div
           className="bg-minimalsitic-icon bg-no-repeat bg-center bg-cover"
           style={{ minHeight: "100vh" }}
         >
-          <NavBar />
           <motion.div
             className="flex flex-col xl:flex-row opacity-0"
             animate={{ opacity: 1 }}
@@ -33,17 +40,12 @@ export default function Home() {
             <div className="xl:flex-1 flex flex-col justify-center items-center xl:items-start">
               <div className="mx-6 mt-32 xl:mt-40 xl:ml-52">
                 <Header />
-
                 <div className="flex flex-col justify-center items-center xl:items-start mt-12 w-full">
                   <Caption />
-
-                  <TextField placeholder="Email" width="w-1/2 "  />
-
+                  <TextField placeholder="Email" width="w-1/2 " />
                   <Button
                     buttonStyle="w-3/4 xl:w-1/2 bg-white bg-opacity-20 text-white rounded-md h-14 mt-5 font-semibold hover:bg-gradient-to-r from-teal-400 via-green-400 to-green-500 hover:animate-flow"
-                    onClick={() => {
-                      router.push("/scan");
-                    }}
+                    onClick={() => {}}
                     textStyle="text-white font-semibold text-md"
                     text="SIGN UP"
                   />
@@ -54,40 +56,43 @@ export default function Home() {
           </motion.div>
         </div>
 
+        {/* Mission statement Jumbotron with image*/}
+
         <div
-          className="bg-black flex justify-center items-center"
-          style={{ minHeight: "80vh" }}
+          className="flex justify-center items-center bg-opacity-10"
+          style={{ minHeight: "90vh" }}
         >
           <motion.div
-            className=" mx-4 xl:w-3/4 xl:h-3/4  shadow-md rounded-xl py-3 px-4 xl:px-6 mt-4 bg-white backdrop-filter backdrop-blur-md bg-opacity-10 flex flex-col items-center opacity-0"
+            className="mx-6 xl:w-5/6 xl:h-3/4 shadow-md rounded-xl py-3 px-4 xl:px-6 mt-4 bg-black backdrop-filter backdrop-blur-md bg-opacity-10 flex flex-col items-center opacity-0"
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
           >
-            <span className="text-2xl xl:text-6xl text-transparent pt-3 xl:pt-12 bg-cl bg-gradient-to-r from-blue-300 via-teal-500 to-green-500 bg-clip-text m-1">
-              Striving for a sustainble tomorrow
-            </span>
-
-            <span className="xl:text-xl m-1 xl:mx-56 text-white mt-6 xl:mt-20 text-left">
-              Wether flying on an airplane or riding an Uber, Paradropp helps
-              you reduce your carbon footprint wherever you travel. By Choosing
-              Paradropp you are creating awareness on becoming climate
-              conscious.
-            </span>
-
-            <span className="xl:text-xl m-1 xl:mx-56 text-white mt-4 xl:mt-14 text-left">
-              Climate change is already showing signs of being a treat to both
-              our planet and civilization. Without taking the right descisions,
-              we are endangering future generations. The biggest ways to reduce
-              our footrints are by utilizing green energy for autombiles and
-              reduction in production of green house casuing agents.
-            </span>
-
-            <span className=" xl:text-3xl font-semibold text-transparent pt-4 xl:pt-12 bg-cl bg-gradient-to-r from-blue-300 via-teal-500 to-green-500 bg-clip-text m-1 mb-2">
-              JOIN US
-            </span>
+            <JubotronMission />
           </motion.div>
         </div>
 
+        {/* Mission statement Jumbotron with image*/}
+        <div
+          className="flex justify-center items-center bg-city-bg bg-opacity-10"
+          style={{ minHeight: "90vh" }}
+        >
+          <div className="mx-4 xl:w-5/6 xl:h-5/6 shadow-md rounded-xl py-3 px-4 xl:px-6 mt-4 bg-black backdrop-filter backdrop-blur-md bg-opacity-40 flex flex-col items-center">
+            <NetZeroChart />
+          </div>
+        </div>
+
+        <div
+          className="flex justify-center items-center bg-opacity-10"
+          style={{ minHeight: "80vh" }}
+        >
+          <motion.div
+            className=" mx-4 xl:w-5/6  shadow-md rounded-xl py-3 px-4 xl:px-6 mt-4 bg-black backdrop-filter backdrop-blur-md bg-opacity-10 flex flex-col items-center opacity-0"
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+          ></motion.div>
+        </div>
+
+        {/* Cards and goals*/}
         <div
           className="bg-subtitle-bg bg-no-repeat bg-center bg-cover flex flex-col xl:flex-row"
           style={{ minHeight: "100vh" }}
@@ -121,69 +126,6 @@ export default function Home() {
           </div>
         </div>
       </motion.div>
-      <Footer />
     </>
-  );
-}
-
-function ListHeader() {
-  return (
-    <div className="flex xl:flex-1 flex-col justify-start items-center xl:items-start mr-2 xl:mr-10">
-      <p className="text-white font-bold text-3xl mt-20 xl:mt-60 ml-10 xl:ml-20">
-        We take care of all your travel hassles
-      </p>
-      <p className="text-white font-bold text-4xl mt-4 xl:mt-4 ml-10 xl:ml-20">
-        So you can peacfully take the vacation, while
-      </p>
-      <p className="text-white font-bold text-5xl mt-4 xl:mt-4 ml-10 xl:ml-20">
-        Relaxing and Enjoying.
-      </p>
-    </div>
-  );
-}
-
-function Header() {
-  return (
-    <>
-      <p className=" text-4xl xl:text-6xl text-left font-extrabold text-white mb-3 xl:mb-2">
-        Open Tooling and Platform
-      </p>
-      <p className="text-2xl xl:text-4xl text-left font-bold text-white">
-        for a sustainable tomorrow.
-      </p>
-
-      <div className="mt-5 xl:mt-4 xl:flex xl:flex-col ">
-        {/* <p
-          className="hidden xl:inline-block text-left text-black"
-          style={{ fontSize: "18px" }}
-        >
-          Choose green mobility over an Uber while travelling and get rewards in
-        </p>
-        <p
-          className="xl:hidden text-left text-gray-300 "
-          style={{ fontSize: "18px" }}
-        >
-          Choose green mobility over an Uber while travelling and get rewards in
-          stable coins while creating a greater impact to help fight climate
-          change.
-        </p> */}
-
-        {/* <p
-          className="hidden xl:inline-block text-left text-gray-300"
-          style={{ fontSize: "18px" }}
-        >
-          stable coins while creating a greater impact to help fight climate
-          change.
-        </p> */}
-      </div>
-    </>
-  );
-}
-
-function Caption() {
-  return (
-    <p className="text-center text-white font-semibold text-2xl xl:text-4xl">
-      Stay Notified
-    </p>
   );
 }
