@@ -16,7 +16,6 @@ import {
   JubotronMission,
   ListHeader,
 } from "./components/content";
-import NetZeroChart from "../../Components/Chart/NetZeroChart";
 
 export default function Home() {
   const router = useRouter();
@@ -77,7 +76,6 @@ export default function Home() {
           style={{ minHeight: "90vh" }}
         >
           <div className="mx-4 xl:w-5/6 xl:h-5/6 shadow-md rounded-xl py-3 px-4 xl:px-6 mt-4 bg-black backdrop-filter backdrop-blur-md bg-opacity-40 flex flex-col items-center">
-            <NetZeroChart />
           </div>
         </div>
 
