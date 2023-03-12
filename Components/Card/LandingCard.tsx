@@ -9,7 +9,8 @@ type LandingCardProps = {
 export default function LandingCard(props: LandingCardProps) {
   return (
     <motion.div
-      className="bg-white bg-opacity-10 shadow-md rounded-xl backdrop-filter backdrop-blur-md w-3/4 xl:w-3/5  flex flex-col p-4 py-10 my-8 justify-center items-start"
+    style={{width: '30%', margin: '1%', height: '20rem'}}
+      className="bg-white bg-opacity-10 shadow-md rounded-xl backdrop-filter backdrop-blur-md w-1/4 xl:w-1/5  flex flex-col p-4 py-10 my-8 justify-center items-start"
       whileHover={{
         scale: 1.15,
         animation: "ease-in-out",
