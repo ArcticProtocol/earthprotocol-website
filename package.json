@@ -1,5 +1,5 @@
 {
-  "name": "paradropp-website",
+  "name": "earthprotocol-website",
   "private": true,
   "scripts": {
     "dev": "next dev",
