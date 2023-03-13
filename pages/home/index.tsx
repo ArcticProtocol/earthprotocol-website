@@ -1,9 +1,7 @@
-import NavBar from "../../Components/NavBar/NavBar";
 import { motion } from "framer-motion";
 import TextField from "../../Components/TextField/TextField";
 import Button from "../../Components/Button/Button";
 import LandingCard from "../../Components/Card/LandingCard";
-import Footer from "../../Components/Footer/Footer";
 import {
   ClipboardListIcon,
   GiftIcon,
@@ -19,7 +17,7 @@ import {
 
 import Image from "next/image";
 
-import transportChart from "../../public/dataset/transport-chart.png";
+import transportChart from "../../public/dataset/white-chart.png";
 
 export default function Home() {
   const router = useRouter();
@@ -79,8 +77,11 @@ export default function Home() {
           className="flex justify-center items-center bg-city-bg bg-opacity-10"
           style={{ minHeight: "90vh" }}
         >
-          <div className="mx-4 xl:w-5/6 xl:h-5/6 shadow-md rounded-xl py-3 px-4 xl:px-6 mt-4 bg-black backdrop-filter backdrop-blur-md bg-opacity-40 flex flex-col items-center">
-          <img src="https://ichef.bbci.co.uk/images/ic/448xn/p09xd6t1.png"></img>
+          <div className=" bg-white-chart mx-4 xl:w-5/6 xl:min-h-5/6 shadow-md rounded-xl py-3 px-4 xl:px-6 mt-4 bg-black backdrop-filter backdrop-blur-md bg-opacity-40 flex flex-col items-center">
+            {/* <Image src={transportChart}
+            height={500}
+            width={1000}
+            /> */}
           </div>
         </div>
 
@@ -97,16 +98,17 @@ export default function Home() {
               Meet the solution
             </span>
             <div className="flex justify-center items-center bg-opacity-10">
-              <div style={{width: '60%'}}>
+              <div style={{ width: "60%" }}>
                 <img src="./netzero-app.png"></img>
               </div>
               <span className="xl:text-xl m-1 xl:mx-56 text-white mt-4 xl:mt-14 text-justify">
-                Climate change is already showing signs of being a treat to both our
-                planet and civilization. Without taking the right descisions, we are
-                endangering future generations. We don't own the planet, we have to make
-                efforts to save it. Without the right tools, technology, research, and
-                incentive, it would be hard to accomplish the goal of accomplishing
-                net-zero emissions in the coming decades.
+                Climate change is already showing signs of being a treat to both
+                our planet and civilization. Without taking the right
+                descisions, we are endangering future generations. We don't own
+                the planet, we have to make efforts to save it. Without the
+                right tools, technology, research, and incentive, it would be
+                hard to accomplish the goal of accomplishing net-zero emissions
+                in the coming decades.
               </span>
             </div>
           </motion.div>
@@ -169,7 +171,7 @@ export default function Home() {
           style={{ minHeight: "100vh" }}
         >
           <ListHeader />
-        </div> 
+        </div>
       </motion.div>
     </>
   );
