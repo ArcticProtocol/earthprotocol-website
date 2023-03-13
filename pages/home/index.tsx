@@ -17,6 +17,10 @@ import {
   ListHeader,
 } from "./components/content";
 
+import Image from "next/image";
+
+import transportChart from "../../public/dataset/transport-chart.png";
+
 export default function Home() {
   const router = useRouter();
   return (
