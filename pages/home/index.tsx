@@ -8,12 +8,7 @@ import {
   Star,
 } from "../../Components/Icons/Icons";
 import { useRouter } from "next/router";
-import {
-  Caption,
-  Header,
-  JubotronMission,
-  ListHeader,
-} from "./components/content";
+import content from "./components/content";
 
 import Image from "next/image";
 
@@ -40,9 +35,9 @@ export default function Home() {
           >
             <div className="xl:flex-1 flex flex-col justify-center items-center xl:items-start">
               <div className="mx-6 mt-32 xl:mt-40 xl:ml-52">
-                <Header />
+                <content.Header />
                 <div className="flex flex-col justify-center items-center xl:items-start mt-12 w-full">
-                  <Caption />
+                  <content.Caption />
                   <TextField placeholder="Email" width="w-1/2 " />
                   <Button
                     buttonStyle="w-3/4 xl:w-1/2 bg-white bg-opacity-20 text-white rounded-md h-14 mt-5 font-semibold hover:bg-gradient-to-r from-teal-400 via-green-400 to-green-500 hover:animate-flow"
@@ -68,7 +63,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
           >
-            <JubotronMission />
+            <content.JubotronMission />
           </motion.div>
         </div>
 
@@ -170,7 +165,7 @@ export default function Home() {
           className="bg-subtitle-bg bg-no-repeat bg-center bg-cover flex flex-col xl:flex-row"
           style={{ minHeight: "100vh" }}
         >
-          <ListHeader />
+          <content.ListHeader />
         </div>
       </motion.div>
     </>
