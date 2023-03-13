@@ -104,7 +104,7 @@ export default function Home() {
               <span className="xl:text-xl m-1 xl:mx-56 text-white mt-4 xl:mt-14 text-justify">
                 Climate change is already showing signs of being a treat to both
                 our planet and civilization. Without taking the right
-                descisions, we are endangering future generations. We don't own
+                descisions, we are endangering future generations. We don&apos;t own
                 the planet, we have to make efforts to save it. Without the
                 right tools, technology, research, and incentive, it would be
                 hard to accomplish the goal of accomplishing net-zero emissions
