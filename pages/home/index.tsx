@@ -8,11 +8,11 @@ import {
   Star,
 } from "../../Components/Icons/Icons";
 import { useRouter } from "next/router";
-import content from "./components/content";
 
 import Image from "next/image";
 
 import transportChart from "../../public/dataset/white-chart.png";
+import Caption, { Header, JubotronMission, ListHeader } from "./components/content";
 
 export default function Home() {
   const router = useRouter();
@@ -35,9 +35,9 @@ export default function Home() {
           >
             <div className="xl:flex-1 flex flex-col justify-center items-center xl:items-start">
               <div className="mx-6 mt-32 xl:mt-40 xl:ml-52">
-                <content.Header />
+                <Header />
                 <div className="flex flex-col justify-center items-center xl:items-start mt-12 w-full">
-                  <content.Caption />
+                  <Caption />
                   <TextField placeholder="Email" width="w-1/2 " />
                   <Button
                     buttonStyle="w-3/4 xl:w-1/2 bg-white bg-opacity-20 text-white rounded-md h-14 mt-5 font-semibold hover:bg-gradient-to-r from-teal-400 via-green-400 to-green-500 hover:animate-flow"
@@ -63,7 +63,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
           >
-            <content.JubotronMission />
+            <JubotronMission />
           </motion.div>
         </div>
 
@@ -99,8 +99,8 @@ export default function Home() {
               <span className="xl:text-xl m-1 xl:mx-56 text-white mt-4 xl:mt-14 text-justify">
                 Climate change is already showing signs of being a treat to both
                 our planet and civilization. Without taking the right
-                descisions, we are endangering future generations. We don&apos;t own
-                the planet, we have to make efforts to save it. Without the
+                descisions, we are endangering future generations. We don&apos;t
+                own the planet, we have to make efforts to save it. Without the
                 right tools, technology, research, and incentive, it would be
                 hard to accomplish the goal of accomplishing net-zero emissions
                 in the coming decades.
@@ -165,7 +165,7 @@ export default function Home() {
           className="bg-subtitle-bg bg-no-repeat bg-center bg-cover flex flex-col xl:flex-row"
           style={{ minHeight: "100vh" }}
         >
-          <content.ListHeader />
+          <ListHeader />
         </div>
       </motion.div>
     </>

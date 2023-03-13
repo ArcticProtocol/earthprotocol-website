@@ -91,4 +91,5 @@ function JubotronMission() {
   );
 }
 
-export default { Caption, Header, ListHeader, JubotronMission };
+export default Caption;
+export { Header, ListHeader, JubotronMission };
