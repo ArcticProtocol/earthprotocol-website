@@ -64,7 +64,7 @@ function JubotronMission() {
   return (
     <>
       <span className="text-2xl xl:text-6xl text-center pb-2 text-transparent pt-3 xl:pt-12 bg-cl bg-gradient-to-r from-blue-300 via-teal-500 to-green-500 bg-clip-text m-1">
-        Climate Change is here, and we're
+        Climate Change is here, and we&apos;re
       </span>
       <span className="text-2xl xl:text-6xl text-center pb-2 text-transparent bg-cl bg-gradient-to-r from-blue-300 via-teal-500 to-green-500 bg-clip-text m-1">
         pioneering tools for a sustainable tomorrow.
@@ -73,14 +73,14 @@ function JubotronMission() {
       <span className="xl:text-xl m-1 xl:mx-56 text-white mt-4 xl:mt-14 text-justify">
         Climate change is already showing signs of being a treat to both our
         planet and civilization. Without taking the right descisions, we are
-        endangering future generations. We don't own the planet, we have to make
+        endangering future generations. We don&apos;t own the planet, we have to make
         efforts to save it. Without the right tools, technology, research, and
         incentive, it would be hard to accomplish the goal of accomplishing
         net-zero emissions in the coming decades.
       </span>
 
       <span className="xl:text-xl m-2 xl:mx-56 text-white mt-1 xl:mt-1 text-justify">
-        We're building an open platform for individuals, organizations and
+        We&apos;re building an open platform for individuals, organizations and
         governments to utilize tools and products to improve their pathway to
         reducing their carbon footprint and achieving sustainability goals. We
         are optimistic about the goals and have an exciting roadmap ahead. With
