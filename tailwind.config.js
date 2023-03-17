@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "home-bg": "url('./public/home-bg.png')",
-        "subtitle-bg": "url('./public/subtitle-bg.png')",
-        "city-bg": "url('./public/city-bg.png')",
-        "minimalsitic-icon": "url('./public/minimalsitic-icon.png')",
+        "home-bg": "url('/public/home-bg.png')",
+        "subtitle-bg": "url('/public/subtitle-bg.png')",
+        "city-bg": "url('/public/city-bg.png')",
+        "minimalsitic-icon": "url('/public/minimalsitic-icon.png')",
       },
 
       animation: {
